@@ -80,9 +80,7 @@ Contributions to the AI Yoga Coach project are welcome! If you would like to con
 
 7. Open a pull request on the main repository, describing your changes and why they should be merged.
 
-## License
 
-The AI Yoga Coach project is licensed under the [MIT License](LICENSE). Feel free to modify and distribute the application according to the terms of this license.
 
 ## Acknowledgements
 
