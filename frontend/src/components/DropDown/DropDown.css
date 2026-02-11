@@ -1,0 +1,98 @@
+/* Main Dropdown Button */
+#pose-dropdown-btn {
+    width: 400px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    color: var(--text-light);
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+#pose-dropdown-btn:hover,
+#pose-dropdown-btn:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+    color: var(--text-light);
+    outline: none;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    margin-top: 100px;
+    /* Spacing from top */
+}
+
+/* Custom Menu Container */
+.dropdown-custom-menu {
+    overflow-y: auto;
+    max-height: 40vh;
+    background: rgba(20, 10, 40, 0.95);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-magenta) transparent;
+}
+
+/* Scrollbar specific for this menu */
+.dropdown-custom-menu::-webkit-scrollbar {
+    width: 6px;
+    display: block;
+    /* Ensure it is visible if content overflows */
+}
+
+.dropdown-custom-menu::-webkit-scrollbar-thumb {
+    background-color: var(--accent-magenta);
+    border-radius: 3px;
+}
+
+/* Dropdown Item */
+.dropdown-item-container {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.dropdown-item-container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--accent-cyan);
+}
+
+.dropdown-item-1 {
+    margin: 0 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.dropdown-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--glass-border);
+}
+
+/* Bootstrap override if needed (assuming Bootstrap is used for Dropdown logic) */
+.dropdown-toggle::after {
+    margin-left: 10px;
+    vertical-align: middle;
+}

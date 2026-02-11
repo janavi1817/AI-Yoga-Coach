@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-bg: linear-gradient(135deg, #1a0b2e 0%, #4a148c 50%, #ff007f 100%);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --accent-cyan: #00f2ff;
+  --accent-gold: #ffd700;
+  --accent-magenta: #ff00ff;
+  --text-light: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.7);
+  --success-green: #00ff9d;
+  --warning-yellow: #ffeb3b;
+  --danger-red: #ff1744;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(at 0% 0%, rgba(74, 20, 140, 0.4) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 0, 127, 0.3) 0, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(0, 242, 255, 0.2) 0, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 215, 0, 0.1) 0, transparent 50%),
+    #1a0b2e;
+  background-attachment: fixed;
+  color: var(--text-light);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-magenta);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}

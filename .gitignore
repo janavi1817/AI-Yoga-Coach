@@ -1,0 +1,18 @@
+node_modules
+build
+.DS_Store
+*.pyc
+__pycache__
+.env
+.idea
+.vscode
+*.log
+classification model/yoga_poses/train/*
+classification model/yoga_poses/test/*
+!classification model/yoga_poses/train/.gitkeep
+!classification model/yoga_poses/test/.gitkeep
+csv_per_pose/
+train_data_super_augmented.csv
+model_14.h5
+group1-shard1of1.bin
+model_14.json
